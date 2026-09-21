@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@theme {
+  --font-sans: "Space Grotesk", system-ui, sans-serif;
+  --font-display: "Instrument Serif", serif;
+}
+:root {
+  --background: 36 33% 97%;
+  --foreground: 0 0% 8%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 8%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 8%;
+  --primary: 24 6% 10%;
+  --primary-foreground: 40 20% 97%;
+  --secondary: 30 10% 92%;
+  --secondary-foreground: 0 0% 12%;
+  --muted: 30 8% 90%;
+  --muted-foreground: 0 0% 45%;
+  --accent: 22 95% 55%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 84% 60%;
+  --border: 30 10% 85%;
+  --input: 30 10% 85%;
+  --ring: 22 95% 55%;
+  --radius: 0.2rem;
+  --concrete: 30 6% 87%;
+  --concrete-dark: 30 4% 78%;
+  --steel: 0 0% 22%;
+  --steel-light: 0 0% 40%;
+  --blueprint: 212 80% 52%;
+  --blueprint-light: 212 80% 96%;
+  --safety: 22 95% 55%;
+  --safety-dark: 22 85% 48%;
+  --paper: 40 20% 97%;
+  --ink: 0 0% 8%;
+  --grid: 30 10% 88%;
+}
+.dark {
+  --background: 0 0% 6%;
+  --foreground: 40 20% 96%;
+  --card: 0 0% 9%;
+  --card-foreground: 40 20% 96%;
+  --popover: 0 0% 9%;
+  --popover-foreground: 40 20% 96%;
+  --primary: 40 20% 96%;
+  --primary-foreground: 0 0% 8%;
+  --secondary: 0 0% 14%;
+  --secondary-foreground: 40 10% 90%;
+  --muted: 0 0% 14%;
+  --muted-foreground: 0 0% 60%;
+  --accent: 22 95% 55%;
+  --accent-foreground: 0 0% 98%;
+  --border: 0 0% 16%;
+  --input: 0 0% 16%;
+  --ring: 22 95% 55%;
+  --concrete: 0 0% 14%;
+  --concrete-dark: 0 0% 18%;
+  --steel: 0 0% 80%;
+  --steel-light: 0 0% 65%;
+  --blueprint: 212 80% 62%;
+  --blueprint-light: 212 30% 12%;
+  --paper: 0 0% 6%;
+  --ink: 40 20% 96%;
+  --grid: 0 0% 18%;
+}
+* { border-color: hsl(var(--border)); }
+body { background: hsl(var(--background)); color: hsl(var(--foreground)); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+.font-display { font-family: var(--font-display); }
+.bg-blueprint-grid { background-image: linear-gradient(hsl(var(--grid)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--grid)) 1px, transparent 1px); background-size: 24px 24px; }
+.bg-blueprint-grid-large { background-image: linear-gradient(hsl(var(--grid)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--grid)) 1px, transparent 1px); background-size: 80px 80px; }
